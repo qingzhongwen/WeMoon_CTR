@@ -14,8 +14,7 @@ docker run -p 8501:8501 -p 8500:8500 --mount type=bind,source=/root/tensorflow_s
 
 3. Check the model is running on Docker correctly: docker ps
 
-   See the picture
-
+   See the picture:
 ![image-20200420171032239](./pic/image-20200420171032239.png)
 
 4. Please make sure your trained model on serving is available: 
