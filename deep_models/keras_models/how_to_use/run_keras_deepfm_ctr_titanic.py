@@ -53,7 +53,7 @@ if __name__ == "__main__":
     model.compile("adam", "binary_crossentropy", metrics=['binary_crossentropy','accuracy'], )
 
     history = model.fit(train_model_input, train[target].values,
-                        batch_size=256, epochs=100, verbose=2, validation_split=0.2, )
+                        batch_size=256, epochs=200, verbose=2, validation_split=0.2, )
 
     output_dir = "./saved/keras_deepfm/1"
     if not os.path.exists(output_dir):

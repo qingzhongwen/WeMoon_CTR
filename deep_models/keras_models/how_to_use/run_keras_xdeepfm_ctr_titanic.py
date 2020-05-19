@@ -50,12 +50,12 @@ if __name__ == "__main__":
     print(model.summary())
     model.compile("adam", "binary_crossentropy", metrics=['binary_crossentropy','accuracy'], )
     history = model.fit(train_model_input, train[target].values,
-                        batch_size=256, epochs=100, verbose=2, validation_split=0.2, )
+                        batch_size=256, epochs=200, verbose=2, validation_split=0.2, )
     output_dir = "./saved/keras_xdeepfm/2"
     if not os.path.exists(output_dir):
         os.mkdir(output_dir)
     # save model
-    # tf.saved_model.save(model, output_dir)
+    tf.saved_model.save(model, output_dir)
     pred_ans = model.predict(test_model_input, batch_size=256)
     print("test LogLoss", round(log_loss(test[target].values, pred_ans), 4))
     print("test AUC", round(roc_auc_score(test[target].values, pred_ans), 4))
