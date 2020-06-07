@@ -22,7 +22,6 @@ if __name__ == '__main__':
 
     data = pd.merge(pd.merge(ratings, movies), user)  # .iloc[:10000]
 
-    # data = pd.read_csvdata = pd.read_csv("./movielens_sample.txt")
     sparse_features = ["movie_id", "user_id",
                        "gender", "age", "occupation", "zip", ]
     SEQ_LEN = 50
