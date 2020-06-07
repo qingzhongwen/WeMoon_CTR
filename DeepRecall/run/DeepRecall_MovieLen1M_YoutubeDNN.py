@@ -1,10 +1,3 @@
-import sys,os
-curPath = os.path.abspath(os.path.dirname(__file__))
-# print(curPath)
-rootPath = os.path.split(curPath)[0]
-sys.path.append("/root/toutiao_project/reco_sys/")
-# sys.path.append("/root/toutiao_project/reco_sys/")
-
 import pandas as pd
 import tensorflow as tf
 from sklearn.preprocessing import LabelEncoder
