@@ -5,9 +5,9 @@
       <sourceFolder url="file://$MODULE_DIR$/bert-master" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/RecommendRelative-master" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/DeepRecall" isTestSource="false" />
-      <excludeFolder url="file://$MODULE_DIR$/DeepMatch-master" />
-      <excludeFolder url="file://$MODULE_DIR$/Graph_Embedding" />
-      <excludeFolder url="file://$MODULE_DIR$/bert4keras-master" />
+      <sourceFolder url="file://$MODULE_DIR$/Graph_Embedding" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/EGES-master" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/DSXiangLi_CTR" isTestSource="false" />
     </content>
     <orderEntry type="jdk" jdkName="Remote Python 3.6.5 (sftp://root@192.168.19.137:22/miniconda2/envs/py365/bin/python)" jdkType="Python SDK" />
     <orderEntry type="sourceFolder" forTests="false" />
